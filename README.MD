@@ -48,3 +48,83 @@ Como sabemos, o Node.JS é um runtime que nos permite rodar JS no servidor. Para
 ![https://felixgerschau.com/static/79486d91b22a7c1b4044fce88a4cae20/5a190/js-event-loop-explained.png](https://felixgerschau.com/static/79486d91b22a7c1b4044fce88a4cae20/5a190/js-event-loop-explained.png)
 
 >Fluxograma representativo da arquitetura/forma de execução do NODE.JS, evidenciando como funciona a callstack, a Thread Pool (Web Apis) e a Callback Queue
+
+### 1 - Criando nossa primeira aplicação Node.JS
+
+A primeira aplicação consiste em fazer um programa que monitora nosso uso de memória. O app apresenta:
+
+- A memória livre
+- Total de memória
+- % de uso da memória
+
+```jsx
+const os = require('os');
+const log = require('./logger');
+
+const interval = 1000;
+
+setInterval(() => {
+  const { freemem, totalmem } = os;
+
+  const memoriaTotal = parseInt(totalmem() / 1024 / 1024);
+
+  const memoriaLivre = parseInt(freemem() / 1024 / 1024);
+
+  const memoriaUsada =  parseInt(memoriaTotal - memoriaLivre);
+
+  const porcentagemDeMemoriaUsada = parseInt((memoriaUsada / memoriaTotal) * 100);
+
+  const porcentagemDeMemoriaLivre = parseInt((memoriaLivre / memoriaTotal) * 100);
+
+  const stats = {
+    Memoria_livre: `${memoriaLivre} MB`,
+    Memoria_Em_Uso: `${memoriaUsada} MB`,
+    Memoria_Total: `${memoriaTotal} MB`,
+    Porcentagem_Memoria_Usada: `${porcentagemDeMemoriaUsada} %`,
+    Porcentagem_Memoria_Disponivel: `${porcentagemDeMemoriaLivre} %`
+  }
+  console.clear()
+  console.log("======= PC STATS =======");
+  console.table(stats);
+
+  log(`${JSON.stringify(stats)}\n`);
+}, interval);
+```
+
+---
+
+### 2 - Segunda aplicação com o Node.JS
+
+### Logger:
+
+Essa aplicação consiste em armazenar algumas mensagens dentro de um arquivo de texto. Intuito de aprender alguns métodos das bibliotecas FS e EVENTS, nativa do NODE
+
+```jsx
+const EventEmitter = require('events');
+const fs = require('fs');
+const path = require('path');
+
+const emitter = new EventEmitter();
+
+emitter.on('log', (message) => {
+  fs.appendFile(path.join(__dirname, 'log.txt'), message, err => {
+    if (err) throw err;
+  })
+});
+
+function log(message) {
+  emitter.emit('log', message);
+}
+
+module.exports = log;
+```
+
+*OBSERVAÇÃO: LEMBRE-SE DE IMPORTAR O LOG NO ARQUIVO **STATS.JS** E CHAMAR A FUNÇÃO :* `log(${JSON.stringify(stats)}\\n);`
+
+<div align="center">
+<img src="assets/loggerJs.gif" alt="Api funcionando">
+</div>
+
+---
+
+### 3 - CRIANDO SERVIDOR E ENTENDENDO SOBRE HTTP COM O NODE

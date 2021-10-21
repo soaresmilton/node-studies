@@ -6,22 +6,22 @@ const interval = 1000;
 setInterval(() => {
   const { freemem, totalmem } = os;
 
-  const totalMemory = parseInt(totalmem() / 1024 / 1024);
+  const memoriaTotal = parseInt(totalmem() / 1024 / 1024);
 
-  const freeMemory = parseInt(freemem() / 1024 / 1024);
+  const memoriaLivre = parseInt(freemem() / 1024 / 1024);
 
-  const usingMemory =  parseInt(totalMemory - freeMemory);
+  const memoriaUsada =  parseInt(memoriaTotal - memoriaLivre);
 
-  const percentsUsage = parseInt((usingMemory / totalMemory) * 100);
+  const porcentagemDeMemoriaUsada = parseInt((memoriaUsada / memoriaTotal) * 100);
 
-  const avaibleMemory = parseInt((freeMemory / totalMemory) * 100);
+  const porcentagemDeMemoriaLivre = parseInt((memoriaLivre / memoriaTotal) * 100);
 
   const stats = {
-    Free_Memory: `${freeMemory} MB`,
-    Using_Memory: `${usingMemory} MB`,
-    Total_Memory: `${totalMemory} MB`,
-    Usage_Memory: `${percentsUsage} %`,
-    Avaible_Memory: `${avaibleMemory} %`
+    Memoria_livre: `${memoriaLivre} MB`,
+    Memoria_Em_Uso: `${memoriaUsada} MB`,
+    Memoria_Total: `${memoriaTotal} MB`,
+    Porcentagem_Memoria_Usada: `${porcentagemDeMemoriaUsada} %`,
+    Porcentagem_Memoria_Disponivel: `${porcentagemDeMemoriaLivre} %`
   }
   console.clear()
   console.log("======= PC STATS =======");
