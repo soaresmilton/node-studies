@@ -1,0 +1,16 @@
+{"Free_Memory":"12331 MB","Using_Memory":"7528 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12328 MB","Using_Memory":"7531 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12329 MB","Using_Memory":"7530 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12347 MB","Using_Memory":"7512 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12343 MB","Using_Memory":"7516 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12342 MB","Using_Memory":"7517 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12344 MB","Using_Memory":"7515 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12347 MB","Using_Memory":"7512 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12349 MB","Using_Memory":"7510 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12349 MB","Using_Memory":"7510 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12348 MB","Using_Memory":"7511 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12350 MB","Using_Memory":"7509 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12344 MB","Using_Memory":"7515 MB","Total_Memory":"19859 MB","Usage_Memory":"37 %","Avaible_Memory":"62 %"}
+{"Free_Memory":"12267 MB","Using_Memory":"7592 MB","Total_Memory":"19859 MB","Usage_Memory":"38 %","Avaible_Memory":"61 %"}
+{"Free_Memory":"12253 MB","Using_Memory":"7606 MB","Total_Memory":"19859 MB","Usage_Memory":"38 %","Avaible_Memory":"61 %"}
+{"Free_Memory":"12655 MB","Using_Memory":"7204 MB","Total_Memory":"19859 MB","Usage_Memory":"36 %","Avaible_Memory":"63 %"}
