@@ -1,5 +1,5 @@
-const { stat } = require('fs');
 const os = require('os');
+const log = require('./logger');
 
 const interval = 1000;
 
@@ -26,5 +26,7 @@ setInterval(() => {
   console.clear()
   console.log("======= PC STATS =======");
   console.table(stats);
+
+  log(`${JSON.stringify(stats)}\n`);
 }, interval);
 
