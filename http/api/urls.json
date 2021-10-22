@@ -1,0 +1,16 @@
+{
+  "urls": [
+    {
+      "name": "QuestMaster",
+      "url": "http://questmaster.com.br"
+    },
+    {
+      "name": "Google",
+      "url": "http://google.com"
+    },
+    {
+      "name": "Discord",
+      "url": "http://discord.com"
+    }
+  ]
+}
