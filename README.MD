@@ -321,10 +321,8 @@ Nossa estrutura final de arquivos  da API ficou da seguinte maneira:
 
 Nossa aplicação funcionando:
 
-<div *align*="center">
-
-<img *src*="assets/app.gif" *alt*="App funcionando">
-
+<div align="center">
+<img src="assets/app.gif" alt="App funcionando">
 </div>
 
 ---
